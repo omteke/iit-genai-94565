@@ -222,4 +222,4 @@ __marimo__/
 .streamlit/secrets.toml
 
 venv_a/
-venv_b/
+venv_b/.env
