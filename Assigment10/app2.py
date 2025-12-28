@@ -106,6 +106,10 @@ def list_resumes():
 
 st.title(" AI Resume Shortlisting")
 
+if st.sidebar.button("Index All Resumes"):
+    count = extract_and_store()
+    st.sidebar.success(f"Indexed all resumes ({count} chunks)")
+
 menu = st.sidebar.radio(
     "Select Action",
     [
