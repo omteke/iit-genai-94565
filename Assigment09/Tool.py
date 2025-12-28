@@ -19,7 +19,7 @@ llm = init_chat_model(
 )
 
 @tool
-def csv_auto_sql_tool(file_path: str, question: str) -> str:
+def csv_auto_sql_tool(question: str) -> str:
     """
     Automatically generate SQL from user question using LLM
     and execute it on CSV using pandasql.
@@ -124,6 +124,7 @@ You are an intelligent assistant.
 chat_history = []
 
 print("\n=== Intelligent Agent Started ===")
+print("Welcome To AI Agent")
 print("Type 'exit' to quit\n")
 
 while True:
